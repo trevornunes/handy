@@ -1,6 +1,6 @@
 Atari Lynx Emulator 'Handy'
 
-This is a port of Atari Lynx emulator located at handy.sourceforge.n
+This is a port of Atari Lynx emulator located at http://handy.sourceforge.net
 
 You'll need both rom games and a bootrom image. atariage.com is an awesome Atari site so check out the Lynx section ...
 
