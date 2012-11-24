@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<emulation version="1">
+
+<dpad x="2" y="360" height="200" width="200">
+<label x="0" y="0"  height="200" width="200" image="dpad.png"/>
+</dpad>
+
+
+<key x="900" y="0" width="80" height="40" sym="13" scancode="13">
+<label x="0" y="0" width="80" height="40" image="start.png"/>
+</key>
+
+<key x="800" y="400" width="80" height="80" sym="121" scancode="121">
+<label x="0" y="4" width="80" height="80" image="A.png"/>
+</key>
+
+<key x="900" y="400" width="80" height="80" sym="122" scancode="122">
+<label x="4" y="4" width="80" height="80" image="A.png"/>
+</key>
+
+<key x="0" y="0" width="80" height="80" sym="254" scancode="254"/>
+
+
+</emulation>

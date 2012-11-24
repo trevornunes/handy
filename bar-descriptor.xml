@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+<!-- BlackBerry® 10 application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry® 10 OS.
+-->
+
+    <!-- A universally unique application identifier. Must be unique across all BlackBerry applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+    <id>com.example.handy</id>
+
+    <!-- The name that is displayed in the BlackBerry application installer. 
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <name>handy</name>
+    
+    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+    <versionNumber>1.0.0</versionNumber>
+
+    <!-- Fourth digit segment of the package version. First three segments are taken from the 
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+    <buildId>2</buildId>
+                 
+    <!-- Description, displayed in the BlackBerry application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+
+    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <author>t</author>
+    <authorId>gYAAgOKRaqVbNM5ToziNoZFV720</authorId>
+    <description>Atari Lynx emulator</description>
+    
+    <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+    <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+   
+    <initialWindow>
+        <aspectRatio>landscape</aspectRatio>
+        <autoOrients>false</autoOrients>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+    </initialWindow>
+    
+    <!--  The category where the application appears. Either core.games or core.media. -->
+    <category>core.games</category>
+    <asset path="icon.png">icon.png</asset>
+    <asset path="${workspace_loc:/SDL12/Device-Release/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+    <asset path="${workspace_loc:/TouchControlOverlay/Device-Release/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
+    <asset path="sdl-controls.xml">sdl-controls.xml</asset>
+    <asset path="lynx2.png">lynx2.png</asset>
+    <asset path="media/dpad.png">dpad.png</asset>
+    <asset path="media/A.png">A.png</asset>
+    <asset path="media/select.png">select.png</asset>
+    <asset path="media/start.png">start.png</asset>
+    <asset path="${workspace_loc:/rom/Device-Release/librom.so}" type="Qnx/Elf">lib/librom.so</asset>
+    <configuration id="com.qnx.qcc.configuration.exe.debug.1362736199" name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Debug/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.release.317117162" name="Device-Release">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Release/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.964236396" name="Device-Profile">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Profile/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.1583854520" name="Device-Coverage">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Coverage/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.debug.1977125016" name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Debug/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.1257912730" name="Simulator-Profile">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Profile/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.1417896536" name="Simulator-Coverage">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Coverage/handy" entry="true" type="Qnx/Elf">handy</asset>
+    </configuration>
+    
+    <!--  The icon for the application, which should be 86x86. -->
+    <icon>
+       <image>lynx2.png</image>
+    </icon>
+    
+    <!--  The splash screen that will appear when your application is launching. Should be 1024x600. -->
+    <!-- <splashscreen></splashscreen> -->
+
+    <!-- Request permission to execute native code.  Required for native applications. -->
+    <permission system="true">run_native</permission>
+    <permission>access_shared</permission>
+    
+    <!--  The permissions requested by your application. -->
+    <!--  <permission>access_shared</permission> -->
+    <!--  <permission>record_audio</permission> -->
+    <!--  <permission>read_geolocation</permission> -->
+    <!--  <permission>use_camera</permission> -->
+    <!--  <permission>access_internet</permission> -->
+    <!--  <permission>play_audio</permission> -->
+    <!--  <permission>post_notification</permission> -->
+    <!--  <permission>set_audio_volume</permission> -->
+    <!--  <permission>read_device_identifying_information</permission> -->
+    <!--  <permission>access_led_control</permission> -->
+    <!--  <action>run_when_backgrounded</action> -->
+    
+
+    <!-- Ensure that shared libraries in the package are found at run-time. -->
+    <env var="LD_LIBRARY_PATH" value="app/native/lib"/>
+    <env var="SDL_VIDEODRIVER" value="pb-8bit"/>
+    
+</qnx>
