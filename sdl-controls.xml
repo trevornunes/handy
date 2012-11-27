@@ -6,19 +6,27 @@
 </dpad>
 
 
-<key x="900" y="0" width="80" height="40" sym="13" scancode="13">
-<label x="0" y="0" width="80" height="40" image="start.png"/>
-</key>
-
 <key x="800" y="400" width="80" height="80" sym="121" scancode="121">
 <label x="0" y="4" width="80" height="80" image="A.png"/>
 </key>
 
-<key x="900" y="400" width="80" height="80" sym="122" scancode="122">
+<key x="900" y="440" width="80" height="80" sym="122" scancode="122">
 <label x="4" y="4" width="80" height="80" image="A.png"/>
 </key>
 
-<key x="0" y="0" width="80" height="80" sym="254" scancode="254"/>
 
+<key x="900" y="100" width="80" height="80" sym="282" scancode="282">
+<label x="4" y="4" width="40" height="40" image="A.png"/>
+</key>
+
+<key x="900" y="200" width="80" height="80" sym="13" scancode="13">
+<label x="4" y="4" width="40" height="40" image="start.png"/>
+</key>
+
+<key x="900" y="300" width="80" height="80" sym="283" scancode="283">
+<label x="4" y="4" width="40" height="40" image="A.png"/>
+</key>
+
+<key x="0" y="0" width="80" height="80" sym="254" scancode="254"/>
 
 </emulation>

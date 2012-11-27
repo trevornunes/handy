@@ -4,6 +4,8 @@
 	<comment></comment>
 	<projects>
 		<project>rom</project>
+		<project>SDL12</project>
+		<project>TouchControlOverlay</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -28,7 +30,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/handy/Device-Release}</value>
+					<value>${workspace_loc:/handy/Device-Debug}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.contents</key>

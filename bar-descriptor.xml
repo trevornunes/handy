@@ -21,7 +21,7 @@
 
     <!-- Fourth digit segment of the package version. First three segments are taken from the 
          <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
-    <buildId>2</buildId>
+    <buildId>3</buildId>
                  
     <!-- Description, displayed in the BlackBerry application installer.
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
@@ -52,7 +52,6 @@
     <asset path="media/A.png">A.png</asset>
     <asset path="media/select.png">select.png</asset>
     <asset path="media/start.png">start.png</asset>
-    <asset path="${workspace_loc:/rom/Device-Release/librom.so}" type="Qnx/Elf">lib/librom.so</asset>
     <configuration id="com.qnx.qcc.configuration.exe.debug.1362736199" name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Debug/handy" entry="true" type="Qnx/Elf">handy</asset>
